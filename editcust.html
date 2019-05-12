@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Homepage</title>
+  <!---Required meta tags--->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!---Bootstrap CSS--->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!---navbar--->
+  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/bootstrap@4.1.0/dist/js/bootstrap.min.js"></script>
+  <!---navbar button--->
+  <script type="text/javascript">
+    $(function(){
+      $(".close-l-sidenav,.open-r-sidenav").on("click",function(){
+          var toggleWidth = ($(".r-sidenav").width()==0)?250:0;
+          $(".r-sidenav").width(toggleWidth);
+      });
+    });
+  </script>
+  <style>
+    /*sidemenu ด้านซ้าย*/
+    .r-sidenav {
+        position: fixed; 
+        z-index: 1040; 
+        top: 0; 
+        left: 0;    
+        height: 100%; 
+        width: 0; 
+        overflow-x: hidden; 
+    }   
+    .text-center {
+        text-align: center;
+    } 
+  </style>
+</head>
+<body>
+    <form name="homepage" action="flight.php" method="post">
+    <!---navbar--->
+    <div class="navbar navbar-light bg-lightnavbar navbar-expand-lg navbar-dark bg-dark">
+      <!---navbar name--->
+      <a class="navbar-brand" href="#">
+       \
+      </a>
+      <!---navbar button--->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!---navbar link--->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a href="#">Homepage</a>]
+         <a href="History.php">History</a>
+          <a href="logout.php?logout">Logout</a>
+        </div>
+      </div><!---close navbar link--->
+    </div><!---close navbar--->
+
+</body>
+</html>
