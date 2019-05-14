@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <!-- Use CSS -->
+    <link rel="stylesheet" href="css/about.css">
     <!-- Title -->
     <title>Northwind</title>
 </head>
@@ -23,7 +25,7 @@
         <!-- Bar -->
         <ul class="navbar-nav bg-gradient-success text-dark sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Bar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="editcust.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="about.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-poll-h"></i>
                 </div>
@@ -35,7 +37,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="dashboard.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span></a>
+                    <span>Dashboard</span></a>
             </li>
             <hr class="sidebar-divider d-none d-md-block">
             <div class="sidebar-heading"><b>CUSTOMER</b></div>
@@ -99,66 +101,18 @@
                         </li><!-- close Nav Item - User Information -->
                     </ul><!-- close Topbar Navbar -->
                 </nav><!-- close Topbar -->
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Customer Detail</h1>
-                    <!-- customer detail -->
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <!-- row -->
-                            <div class="row">
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="cus_id">Customer ID</label>
-                                    <input type="text" name="" id="cus_id" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="com_name">Company Name</label>
-                                    <input type="text" name="" id="com_name" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="contact_name">Contact Name</label>
-                                    <input type="text" name="" id="contact_name" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="position">Position</label>
-                                    <input type="text" name="" id="position" class="form-control" disabled>
-                                </div>
-                                <p class="col-12 mb-1">Address</p>
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="street">Street</label>
-                                    <input type="text" name="" id="street" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-3 col-sm-12">
-                                    <label for="city">City</label>
-                                    <input type="text" name="" id="city" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-3 col-sm-12">
-                                    <label for="region">Region</label>
-                                    <input type="text" name="" id="region" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-4 col-sm-12">
-                                    <label for="post_code">Postal Code</label>
-                                    <input type="text" name="" id="post_code" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-4 col-sm-12">
-                                    <label for="country">Country</label>
-                                    <input type="text" name="" id="country" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-4 col-sm-12">
-                                    <label for="phone">Phone</label>
-                                    <input type="text" name="" id="phone" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-6 col-12">
-                                    <button class="btn btn-primary btn-block btn-lg mt-2" id="save" onclick="save();">Save</button>
-                                </div>
-                                <div class="form-group col-lg-6 col-12">
-                                    <button class="btn btn-danger btn-block btn-lg mt-2" id="cancel" onclick="cancel();">Cancel</button>
-                                </div>
-                            </div><!-- close row -->
-                        </div>
-                    </div><!-- close customer detail -->
-                </div><!-- close Begin Page Content -->
+                <!-- container -->
+                <div class="container ">
+                    <h1 class="card-title text-center" style="font-size:70px;"><b>Profile</b></h1>
+                    <div class="card-text text-center">
+                        <a style="font-size:40px;">Name: Praewrung &nbsp;&nbsp;Lastname: Panyanukit</a>
+                        <br>
+                        <a style="font-size:30px;"> Student ID: 6030213045</a>
+                    </div>
+                    <div class="img" style="max-width: auto;">
+                        <img src="image/42363848_1607745819371990_4158164040637480960_n.jpg" class="card-img">
+                    </div>
+                </div><!-- close container -->
             </div><!-- close Main Content -->
         </div><!-- close Content Wrapper -->
     </div><!-- close Page Wrapper -->
@@ -166,17 +120,17 @@
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Are you sure??.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="index.html">Logout</a>
-                </div>
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">Are you sure??.</div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="index.html">Logout</a>
+              </div>
             </div>
         </div>
     </div><!-- close Modal-->
@@ -187,8 +141,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <!-- Use JS -->
-    <script src="js/editcusts.js"></script>
 </body>
-
+    
 </html>
+    

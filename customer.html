@@ -23,7 +23,7 @@
         <!-- Bar -->
         <ul class="navbar-nav bg-gradient-success text-dark sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Bar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="editcust.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="customer.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-poll-h"></i>
                 </div>
@@ -102,62 +102,53 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Customer Detail</h1>
-                    <!-- customer detail -->
+                    <h1 class="h3 mb-2 text-gray-800"><b>Customer List</b>></h1>
+                    <p class="mb-4">Table showing customer's information.</p>
+                    <!-- DataTable -->
                     <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <!-- row -->
-                            <div class="row">
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="cus_id">Customer ID</label>
-                                    <input type="text" name="" id="cus_id" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="com_name">Company Name</label>
-                                    <input type="text" name="" id="com_name" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="contact_name">Contact Name</label>
-                                    <input type="text" name="" id="contact_name" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="position">Position</label>
-                                    <input type="text" name="" id="position" class="form-control" disabled>
-                                </div>
-                                <p class="col-12 mb-1">Address</p>
-                                <div class="form-group col-lg-6 col-sm-12">
-                                    <label for="street">Street</label>
-                                    <input type="text" name="" id="street" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-3 col-sm-12">
-                                    <label for="city">City</label>
-                                    <input type="text" name="" id="city" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-3 col-sm-12">
-                                    <label for="region">Region</label>
-                                    <input type="text" name="" id="region" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-4 col-sm-12">
-                                    <label for="post_code">Postal Code</label>
-                                    <input type="text" name="" id="post_code" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-4 col-sm-12">
-                                    <label for="country">Country</label>
-                                    <input type="text" name="" id="country" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-4 col-sm-12">
-                                    <label for="phone">Phone</label>
-                                    <input type="text" name="" id="phone" class="form-control" disabled>
-                                </div>
-                                <div class="form-group col-lg-6 col-12">
-                                    <button class="btn btn-primary btn-block btn-lg mt-2" id="save" onclick="save();">Save</button>
-                                </div>
-                                <div class="form-group col-lg-6 col-12">
-                                    <button class="btn btn-danger btn-block btn-lg mt-2" id="cancel" onclick="cancel();">Cancel</button>
-                                </div>
-                            </div><!-- close row -->
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Tables Customers</h6>
                         </div>
-                    </div><!-- close customer detail -->
+                        <!-- card-body -->
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="data" width="100%" cellspacing="0" >
+                                    <thead>
+                                        <tr>
+                                            <th><center><b>No</b></center></th>
+                                            <th><center><b>ID</b></center></th>
+                                            <th><center><b>Name</b></center></th>
+                                            <th><center><b>Contact Name</b></center></th>
+                                            <th><center><b>Contact Title</b></center></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th><center>-</center></th>
+                                            <th><center>-</center></th>
+                                            <th><center>-</center></th>
+                                            <th><center>-</center></th>
+                                            <th><center>-</center></th>
+                                        </tr>
+                                        <tr>
+                                            <th><center>-</center></th>
+                                            <th><center>-</center></th>
+                                            <th><center>-</center></th>
+                                            <th><center>-</center></th>
+                                            <th><center>-</center></th>
+                                        </tr>
+                                        <tr>
+                                            <th><center></center></th>
+                                            <th><center></center></th>
+                                            <th><center></center></th>
+                                            <th><center></center></th>
+                                            <th><center></center></th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!-- close card-body -->
+                    </div><!-- close DataTable -->
                 </div><!-- close Begin Page Content -->
             </div><!-- close Main Content -->
         </div><!-- close Content Wrapper -->
@@ -188,7 +179,7 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
     <!-- Use JS -->
-    <script src="js/editcusts.js"></script>
+    <script src="js/customer.js"></script>
 </body>
 
 </html>
